@@ -37,3 +37,21 @@ sphinx_advance/plantuml 需要安装 java 和 plantuml.jar
 # Makefile 文件目录下
 make html
 ```
+
+生成后的文件目录结构如下：
+
+```text
+|-- build
+|   |-- doctrees
+|   |-- html
+|   |   |-- _static
+|   |   |-- _templates
+|   |   |-- index.html   <-- 主页
+|   |   |-- ...
+|   |-- ...
+|-- source/
+|-- conf.py
+|-- Makefile
+|-- README.md
+
+```
