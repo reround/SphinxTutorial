@@ -15,6 +15,8 @@ Sphinx教程（SphinxTutorial ）
 
 ## 编译本文依赖 (Compile this .rst file requirements)
 
+本文依赖如下：
+
 ```bash
 pip install sphinx # 安装sphinx
 pip install sphinx-rtd-theme sphinx-book-theme # 常用主题
@@ -22,7 +24,6 @@ pip install sphinxcontrib-video # 视频播放
 pip install sphinxcontrib-plantuml # 绘制UML图
 pip install myst-parser # 支持markdown
 pip install sphinx-design # 美化主题
-pip install jieba # 中文搜索
 ```
 
 ```text
@@ -30,3 +31,9 @@ sphinx_advance/graphviz 需要安装 graphviz
 sphinx_advance/plantuml 需要安装 java 和 plantuml.jar
 ```
 
+编译命令
+
+```bash
+# Makefile 文件目录下
+make html
+```
