@@ -18,6 +18,7 @@ release = "1.0.0"
 sys.path.append(os.path.abspath("sphinxext"))
 extensions = [
     "sphinx.ext.mathjax",  # 数学公式支持
+    'sphinx-mathjax-offline'，# 离线公式支持
     "sphinx.ext.graphviz",  # graphviz 图形支持
     "sphinxcontrib.plantuml",  # plantuml 图形支持
     "matplotlib.sphinxext.plot_directive",  # matplotlib 绘图
@@ -30,6 +31,7 @@ extensions = [
 ]
 todo_include_todos = True
 
+# plotmatlab 输出图像设置
 # plot_formats = [("png", 80), ("hires.png", 200), "pdf"]
 # plot_formats = [("hires.png", 200), ("png", 80), "pdf"]
 # plot_html_show_formats = False

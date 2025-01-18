@@ -66,11 +66,27 @@ Sphinx提供了两种数学表达式的渲染方式 ( 二选一 ):
     # conf.py
     mathjax_path = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
 
-当然你也可以使用本地的MathJax, 参考 `Installing Your Own Copy of MathJax` , 到 `MathJax <https://github.com/mathjax/MathJax/archive/master.zip>`_ 下载 MathJax包  (约34.1MB) 并解压放到 “ `_static` ” 目录, 然后设置路径, 即在 `conf.py` 文件中添加代码:
+离线使用公式编辑
+-------------------
+
+安装插件
+
+.. code-block:: bash
+
+    pip install -U sphinx-mathjax-offline
+
+添加插件
+
+.. code-block:: python
+
+    # conf.py 添加
+    extensions = [
+        'sphinx.ext.mathjax',
+        'sphinx-mathjax-offline'
+    ]
 
 公式编号与引用
 ---------------
-
 
 .. code-block:: rst
 

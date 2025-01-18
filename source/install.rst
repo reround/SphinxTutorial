@@ -20,6 +20,7 @@
         pip install sphinx-design # 美化主题
         pip install breathe # 为其他语言生成文档
         pip install jieba # 中文搜索
+        pip install sphinx-mathjax-offline # 离线公式
 
         ...
 
