@@ -9,6 +9,7 @@ Sphinx教程（SphinxTutorial ）
 希望对读者有所帮助。
 
 > “基础语法”、“中级语法”、“Sphinx标记结构”三节来自 [rst-tutorial-elinpf](https://rst-tutorial-elinpf.readthedocs.io/en/latest/)
+> 对其中的语法进行了补充和修改，并添加了一些自己的理解。
 
 
 ## 编译本文依赖 (Compile this .rst file requirements)
