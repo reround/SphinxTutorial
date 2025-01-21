@@ -8,6 +8,8 @@
 
 .. |panda|  image:: ../_static/imgs/panda.jpg
 
+.. rubric:: rst 语法
+
 .. code-block:: rst
 
     这个图片:  |panda| 是用符号替换的

@@ -21,6 +21,8 @@
 六级标题
 ````````
 
+.. rubric:: rst 语法
+
 .. code-block:: rst
     
     ========

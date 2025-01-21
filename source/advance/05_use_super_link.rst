@@ -11,6 +11,8 @@
 
 ..  _百度: http://www.baidu.com
 
+.. rubric:: rst 语法
+
 .. code-block:: rst
 
     ..  _百度: http://www.baidu.com
@@ -19,6 +21,8 @@
 ====================
 
 新浪的超链接: `新浪 <https://www.sina.com.cn/>`_ 
+
+.. rubric:: rst 语法
 
 .. code-block:: rst
 

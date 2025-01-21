@@ -8,6 +8,8 @@
 
 .. image::  /_static/imgs/panda.jpg
 
+.. rubric:: rst 语法
+
 .. code-block:: rst
 
     .. image::  /_static/imgs/panda.jpg

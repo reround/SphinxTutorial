@@ -16,6 +16,8 @@ c++代码样例
         return 0;
     }
 
+.. rubric:: rst 语法
+
 .. code-block:: rst
 
     .. code-block:: c++
@@ -60,6 +62,8 @@ bash代码样例
         ;;
     esac
     done
+
+.. rubric:: rst 语法
 
 .. code-block:: rst
 
@@ -111,6 +115,9 @@ python代码样例
 
     f = open('/Users/michael/gbk.txt', 'r', encoding='gbk', errors='ignore')
 
+
+.. rubric:: rst 语法
+
 .. code-block:: rst
 
     .. code-block:: python
@@ -157,6 +164,8 @@ json对象样例展示
             }
         ]
     }
+
+.. rubric:: rst 语法
 
 .. code-block:: rst
 

@@ -11,6 +11,8 @@
 :fieldname: age
 :fieldanme: getAge()
 
+.. rubric:: rst 语法
+
 .. code-block:: rst
 
   :fieldname: name
@@ -28,6 +30,8 @@ csv表格
    "Crunchy Frog", 1.49, "If we took the bones out, it wouldn't be
    crunchy, now would it?"
    "Gannet Ripple", 1.99, "On a stick!"
+
+.. rubric:: rst 语法
 
 .. code-block:: rst
 
@@ -50,6 +54,8 @@ csv表格引用一个csv文件的
    :file: test.csv
    :encoding: utf-8
    :align: left
+
+.. rubric:: rst 语法
 
 .. code-block:: rst
 
@@ -83,6 +89,8 @@ listtable表格
    * - Gannet Ripple
      - 1.99
      - On a stick!
+
+.. rubric:: rst 语法
 
 .. code-block:: rst
 

@@ -18,6 +18,8 @@
         return 0;
     }
 
+.. rubric:: rst 语法
+
 .. code-block:: rst
 
     .. code-block:: c
@@ -42,6 +44,8 @@
         printf("%s\n","aaaa");
         return 0;
     }
+
+.. rubric:: rst 语法
     
 .. code-block:: rst
 
@@ -67,6 +71,8 @@
        print 'This one is not...'
        print '...but this one is.'
 
+.. rubric:: rst 语法
+
 .. code-block:: rst
     
     .. code-block:: python
@@ -89,6 +95,8 @@
    :linenos:
    :lines: 1-5,9-
 
+.. rubric:: rst 语法
+
 .. code-block:: rst
 
     .. literalinclude:: test.py
@@ -103,6 +111,8 @@ diff2个文件
 
 .. literalinclude:: test.py
    :diff: test2.py
+
+.. rubric:: rst 语法
 
 .. code-block:: rst
 

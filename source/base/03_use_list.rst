@@ -12,6 +12,8 @@
 - 这是另一个item
 - 你能使用*，-，+都可以。
 
+.. rubric:: rst 语法
+
 .. code-block:: rst
 
     - 这是一个item
@@ -24,6 +26,8 @@
 1.  这是一个item
 2.  这是另一个item
 #.  使用#.可以自动编号的
+
+.. rubric:: rst 语法
 
 .. code-block:: rst
 
@@ -38,6 +42,8 @@
     这是一个功能描述
 注意事项
     这是注意事项描述
+
+.. rubric:: rst 语法
 
 .. code-block:: rst
 
@@ -56,6 +62,8 @@
 :工作:
     这个是工作字段，用于描述工作
 
+.. rubric:: rst 语法
+
 .. code-block:: rst
 
     :姓名:
@@ -72,6 +80,8 @@
 -l              列出详细信息
 --color=auto    美化输出
 --version       显示版本
+
+.. rubric:: rst 语法
 
 .. code-block:: rst
 
@@ -93,6 +103,8 @@
   * 子项
 
 * 父列表继续
+
+.. rubric:: rst 语法
 
 .. code-block:: rst
 

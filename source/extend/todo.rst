@@ -31,8 +31,7 @@
 .. todolist:: 
 
 
-源码
------
+.. rubric:: rst 语法
 
 .. code-block:: rst
 

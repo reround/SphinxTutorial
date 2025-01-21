@@ -17,6 +17,8 @@
         你认真看下
             是不是这样的
 
+.. rubric:: rst 语法
+
 .. code-block:: rst
 
     ::
@@ -34,6 +36,8 @@
 >   这是一句话
 >   这是第二句话
 
+.. rubric:: rst 语法
+
 .. code-block:: rst
 
     >   这是一句话
@@ -43,6 +47,8 @@
 ====
 
 | 这是一个行快，使用|开头就可
+
+.. rubric:: rst 语法
 
 .. code-block:: rst
 
@@ -55,6 +61,8 @@
     块引用是使用:结尾的。
         可以花式设置的。
 
+.. rubric:: rst 语法
+
 .. code-block:: rst
 
     块引用:
@@ -66,6 +74,8 @@
 ==========
 
 >>> 文档测试块使用>>>tab开头即可。
+
+.. rubric:: rst 语法
 
 .. code-block:: rst
 

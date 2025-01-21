@@ -19,6 +19,8 @@
 | body row 4 |            | - blocks. | 
 +------------+------------+-----------+
 
+.. rubric:: rst 语法
+
 .. code-block:: rst
 
     +------------+------------+-----------+ 
@@ -47,6 +49,8 @@ True   False  True
 False  True   True 
 True   True   True 
 =====  =====  ======
+
+.. rubric:: rst 语法
 
 .. code-block:: rst
 

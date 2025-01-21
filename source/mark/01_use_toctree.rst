@@ -20,6 +20,8 @@ toctree
 
 样例
 
+.. rubric:: rst 语法
+
 .. code-block:: text
 
     .. toctree::

@@ -15,6 +15,8 @@
     1. 不能相互嵌套
     2. 内容前后不能有空白: 这样写``* text*`` 是错误的
 
+.. rubric:: rst 语法
+
 .. code-block:: rst
 
     - 星号: *text* 是强调 (斜体),
@@ -29,7 +31,9 @@
 ref  
 ====
 
-.. code-block:: text
+.. rubric:: rst 语法
+
+.. code-block:: rst
 
     这个ref就是引用本项目的其他文档的连接的，需要在一个文档的顶部设置
     
@@ -42,6 +46,8 @@ doc
 
 :doc:`/base/03_use_list` 
 
+.. rubric:: rst 语法
+
 .. code-block:: rst
 
     :doc:`/base/03_use_list` 
@@ -52,6 +58,8 @@ download
 :download:`panda </_static/imgs/panda.jpg>` 
 
 :download:`test.csv </mark/test.csv>` 
+
+.. rubric:: rst 语法
 
 .. code-block:: rst
 
@@ -68,6 +76,8 @@ download
 
 |today|
 
+
+.. rubric:: rst 语法
 
 .. code-block:: rst
 

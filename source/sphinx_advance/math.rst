@@ -33,6 +33,8 @@ Sphinx提供了两种数学表达式的渲染方式 ( 二选一 ):
 
 然后，我们就可以在 html 里面编写基于 LaTeX 的数学表达式了，行间数学表达式格式如下：
 
+.. rubric:: rst 语法
+
 .. code-block:: rst
 
     .. math::

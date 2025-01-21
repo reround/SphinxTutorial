@@ -8,6 +8,8 @@
 
 ----
 
+.. rubric:: rst 语法
+
 .. code-block:: rst
 
     ----
@@ -15,6 +17,8 @@
 这里是使用-符号的文本。
 
 ^^^^
+
+.. rubric:: rst 语法
 
 .. code-block:: rst
     

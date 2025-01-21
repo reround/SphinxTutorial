@@ -16,6 +16,8 @@
       The directory which, including its subdirectories, contains all
       source files for one Sphinx project.
 
+.. rubric:: rst 语法
+
 .. code-block:: rst
 
    .. glossary::
@@ -37,6 +39,8 @@
    term 2
       Definition of both terms.
 
+.. rubric:: rst 语法
+
 .. code-block:: rst
 
    .. glossary::
@@ -54,6 +58,8 @@
             : ["finally" ":" `suite`]
    try2_stmt: "try" ":" `suite`
             : "finally" ":" `suite`
+
+.. rubric:: rst 语法
 
 .. code-block:: rst
       
