@@ -2,6 +2,7 @@ pyAutoDoc
 ===========
 
 python 自动文档生成
+-------------------
 
 #. `extensions` 中添加 `sphinx.ext.autodoc` ；
 #. 添加需要生成文档的模块的路径；
@@ -81,3 +82,195 @@ python 自动文档生成
     :lineno-match:
         
         默认为 `True` 。如果设置为 `True` ，则会尝试匹配源代码中的行号。
+
+
+自动生成文档
+------------
+
+参考 : https://blog.csdn.net/lixiaomei0623/article/details/120530642
+
+配置
+^^^^^^^
+
+.. code-block:: python
+
+    # ./source/conf.py
+
+    import os
+    import sys
+    sys.path.insert(0, os.path.abspath('../../src'))
+
+    extensions = [
+        'sphinx.ext.autodoc',
+        'sphinx.ext.napoleon',
+        'sphinx.ext.doctest',
+        'sphinx.ext.intersphinx',
+        'sphinx.ext.todo',
+        'sphinx.ext.coverage',
+        'sphinx.ext.mathjax',
+    ]
+
+.. code-block:: bash
+
+    # pwd : ./source/
+    sphinx-apidoc -o source ../src/
+
+实例
+------
+
+有一下项目：
+
+.. code-block:: text
+
+    doc/
+    | |- build/
+    | |- source/
+    | |- make.bat
+    | |- Makefile
+    src/
+    | |- numpy.py
+    | |- google.py
+    | |- ...
+
+google.py
+^^^^^^^^^^^
+.. code-block:: python
+
+    # -*- coding: utf-8 -*-
+    '''Google注释风格
+    详情见 `Google注释风格指南`_
+    .. _Google注释风格指南:
+    https://google.github.io/styleguide/pyguide.html
+    '''
+    
+    
+    class GoogleStyle:
+        '''Google注释风格
+        用 ``缩进`` 分隔，
+        适用于倾向水平，短而简单的文档
+        Attributes:
+            dividend (int or float): 被除数
+            name (:obj:`str`, optional): 该类的命名
+        '''
+    
+        def __init__(self, dividend, name='GoogleStyle'):
+            '''初始化'''
+            self.dividend = dividend
+            self.name = name
+    
+        def divide(self, divisor):
+            '''除法
+            Google注释风格的函数，
+            类型主要有Args、Returns、Raises、Examples
+            Args:
+                divisor (int):除数
+            Returns:
+                除法结果
+            Raises:
+                ZeroDivisionError: division by zero
+            Examples:
+                >>> google = GoogleStyle(divisor=10)
+                >>> google.divide(10)
+                1.0
+            References:
+                除法_百度百科  https://baike.baidu.com/item/%E9%99%A4%E6%B3%95/6280598
+            '''
+            try:
+                return self.dividend / divisor
+            except ZeroDivisionError as e:
+                return e
+
+numpy.py
+^^^^^^^^^^^
+
+.. code-block:: python
+ 
+    """NumPy注释风格
+    详情见 `NumPy注释风格指南`_
+    .. _NumPy注释风格指南:
+    https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard
+    """
+    
+    class NumpyStyle:
+        '''Numpy注释风格
+        用 ``下划线`` 分隔，
+        适用于倾向垂直，长而深的文档
+        Attributes
+        ----------
+        multiplicand : int
+            被乘数
+        name : :obj:`str`, optional
+            该类的命名
+        '''
+    
+        def __init__(self, multiplicand, name='NumpyStyle'):
+            '''初始化'''
+            self.multiplicand = multiplicand
+            self.name = name
+    
+        def multiply(self, multiplicator):
+            '''乘法
+            Numpy注释风格的函数，
+            类型主要有Parameters、Returns
+            Parameters
+            ----------
+            multiplicator :
+                乘数
+            Returns
+            -------
+            int
+                乘法结果
+            Examples
+            --------
+            >>> numpy = NumpyStyle(multiplicand=10)
+            >>> numpy.multiply(10)
+            100
+            '''
+            try:
+                if isinstance(multiplicator, str):
+                    raise TypeError('Division by str')
+                else:
+                    return self.multiplicand * multiplicator
+            except TypeError as e:
+                return e
+
+reStructredText.py
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+
+    # -*- coding: utf-8 -*-
+    
+    class ReStructuredTextStyle:
+        '''reStructuredText风格
+        用 ``冒号`` 分隔，
+        PyCharm默认风格
+        :arg augend: 被加数
+        :type augend: int
+        '''
+    
+        def __init__(self, augend, name='ReStructuredTextStyle'):
+            '''初始化'''
+            self.augend = augend
+            self.name = name
+    
+        def add(self, addend):
+            '''加法
+            reStructuredText风格的函数，
+            类型主要有param、type、return、rtype、exception
+            :param addend: 被加数
+            :type addend: int
+            :returns: 加法结果
+            :rtype: :obj:`int` or :obj:`str`
+            :exception TypeError: Addition by str
+            >>> reStructredText = ReStructuredTextStyle(augend=10)
+            >>> reStructredText.add(10)
+            20
+            '''
+            try:
+                if isinstance(addend, str):
+                    raise TypeError('Addition by str')
+                else:
+                    return self.augend + addend
+            except TypeError as e:
+                return e

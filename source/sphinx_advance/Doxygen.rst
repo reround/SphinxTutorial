@@ -29,6 +29,15 @@ Doxygen 安装
 Doxyfile 配置注解
 -------------------
 
+一般要手动指定的配置项：
+
+.. code-block:: bash
+
+    PROJECT_NAME        = "My Project"
+    INPUT               = src include
+    OUTPUT_DIRECTORY    = "docs"
+    RECURSIVE           = YES
+
 常用部分示例：
 
 .. code-block:: bash
@@ -39,8 +48,12 @@ Doxyfile 配置注解
     PROJECT_NUMBER         = "1.0"
     # 输出目录
     OUTPUT_DIRECTORY       = "docs"
-    # 使用的文件和目录
+    # 需要生成的文件和目录
     INPUT                  = src include
+    # 希望排除某些子目录（例如测试目录）
+    EXCLUDE_PATTERNS      = */tests/*
+    # 递归搜索需要生成的目录
+    RECURSIVE              = YES
     # 生成HTML文档
     GENERATE_HTML          = YES
     # 生成LaTeX文档，用于打印
