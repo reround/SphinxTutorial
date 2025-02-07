@@ -2,9 +2,9 @@
 
 Sphinx教程（SphinxTutorial ）
 
-> 这是一篇Sphinx教程，主要介绍Sphinx的基本用法。
-> 目的是为了帮助读者更好地了解Sphinx，并能够更好地使用Sphinx。
-> 里面的内容是参考网上的教程，并结合自己的理解进行整理、补充。
+> 这是一篇Sphinx教程，主要介绍Sphinx的基本用法。 \\
+> 目的是为了帮助读者更好地了解Sphinx，并能够更好地使用Sphinx。 \\
+> 里面的内容是参考网上的教程，并结合自己的理解进行整理、补充。 \\
 >
 > 可能电脑上环境不齐全，提供一个 Release 版本参考。
 
@@ -21,10 +21,16 @@ Sphinx教程（SphinxTutorial ）
 ```bash
 pip install sphinx # 安装sphinx
 pip install sphinx-rtd-theme sphinx-book-theme # 常用主题
+pip install sphinx-autobuild # 自动编译
 pip install sphinxcontrib-video # 视频播放
 pip install sphinxcontrib-plantuml # 绘制UML图
 pip install myst-parser # 支持markdown
 pip install sphinx-design # 美化主题
+pip install breathe # 为其他语言生成文档
+pip install jieba # 中文搜索
+pip install sphinx-mathjax-offline # 离线公式
+
+...
 ```
 
 ```python
