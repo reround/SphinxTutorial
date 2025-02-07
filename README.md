@@ -5,6 +5,8 @@ Sphinx教程（SphinxTutorial ）
 > 这是一篇Sphinx教程，主要介绍Sphinx的基本用法。
 > 目的是为了帮助读者更好地了解Sphinx，并能够更好地使用Sphinx。
 > 里面的内容是参考网上的教程，并结合自己的理解进行整理、补充。
+>
+> 可能电脑上环境不齐全，提供一个 Release 版本参考。
 
 希望对读者有所帮助。
 
@@ -39,7 +41,7 @@ plantuml = r"java -jar D:\jar\plantuml.jar"
 编译命令
 
 ```bash
-# Makefile 文件目录下
+# 在项目目录下
 make html
 ```
 
